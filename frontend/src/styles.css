@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter';
+}
+
+.tabs-container {
+  padding-top: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.tabs button {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  padding: 20px ;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #BFBFBF;
+}
+
+.tabs button.active {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #EA246E;
+  border-bottom: 2px solid #EA246E;
+
+}
