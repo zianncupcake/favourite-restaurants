@@ -30,7 +30,6 @@ app.get("/scrape", async (req, res) => {
     await page.click("button[type=submit]", { delay: 20 });
 
     const notifyBtns = await page.waitForSelector("div.x1i10hfl.x1i10hfl");
-    console.log("notifyBtns", notifyBtns);
     if (notifyBtns.length > 0) {
       await notifyBtns[0].click();
     } else {
