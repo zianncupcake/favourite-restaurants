@@ -4,6 +4,7 @@ body {
   font-family: 'Inter';
 }
 
+/* tabs header in active and non active states */
 .tabs-container {
   padding-top: 20px;
 }
@@ -18,7 +19,7 @@ body {
   font-size: 20px;
   line-height: 32px;
   font-weight: 700;
-  padding: 20px ;
+  margin-bottom: 16px ;
   cursor: pointer;
   border: none;
   background: none;
@@ -30,6 +31,28 @@ body {
   line-height: 32px;
   font-weight: 700;
   color: #EA246E;
-  border-bottom: 2px solid #EA246E;
+}
 
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* custom toast style */
+.toast-custom {
+  border-radius: 4px;
+  background-color: #212121;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: lighter;
+}
+
+.toast-custom .Toastify__toast-icon {
+  display: none; 
+}
+
+.toast-custom .Toastify__close-button {
+  display: none; 
 }

@@ -1,0 +1,10 @@
+/* form style for cards */
+.card-container {
+    border-top: 1px solid #E0E0E0;
+    margin-top: 16px;
+}
+
+.card-form label {
+    font-size: 14px;
+    line-height: 22px;
+}
