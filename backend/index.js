@@ -23,10 +23,12 @@ app.get("/scrape", async (req, res) => {
     await page.goto("https://www.instagram.com/accounts/login", {
       waitUntil: "networkidle2",
     });
-    await page.type("input[name=username]", "starlightagents", {
+    //replace USERNAME with your Instagram account username
+    await page.type("input[name=username]", "USERNAME", {
       delay: 20,
     });
-    await page.type("input[name=password]", "Sjyjy8600", { delay: 20 });
+    //replace PASSWORD with your Instagram account password
+    await page.type("input[name=password]", "PASSWORD", { delay: 20 });
     await page.click("button[type=submit]", { delay: 20 });
 
     const notifyBtns = await page.waitForSelector("div.x1i10hfl.x1i10hfl");

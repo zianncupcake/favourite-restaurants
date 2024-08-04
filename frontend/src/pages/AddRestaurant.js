@@ -29,21 +29,22 @@ const AddRestaurant = () => {
   const [dispatching, setDispatching] = useState(false);
 
   //sample dummy data for autofill demo
-  const data = {
-    nameText: "Flip Coffee Roasters",
-    locationText: "619H Bukit Timah Road, Singapore",
-    websiteText: "https://linktr.ee/flipcoffeeroasters",
-    descriptionText: "Open 8am - 5pm, closed on Wednesdays"
-  }
+  // const data = {
+  //   nameText: "Flip Coffee Roasters",
+  //   locationText: "619H Bukit Timah Road, Singapore",
+  //   websiteText: "https://linktr.ee/flipcoffeeroasters",
+  //   descriptionText: "Open 8am - 5pm, closed on Wednesdays"
+  // }
 
   // retrieve details from backend
   const handleFetchAccount = async () => {
     setRetrieving(true);
     try {
       // actual fetching of data from backend server
-      // const { data } = await axios.get(
-      //   `http://localhost:3001/scrape?username=${username}`
-      // );
+
+      const { data } = await axios.get(
+        `http://localhost:3001/scrape?username=${username}`
+      );
       setRetrieving(false);
       setIsModalOpen(false);
       setRetrieveSuccessful(true);
