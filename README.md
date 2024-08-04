@@ -10,13 +10,9 @@ I used dummy data from '@flipcoffeeroasters'to simulate the retrieving data and 
 
 Demo on localhost:
 
-
-https://github.com/user-attachments/assets/1ce1a0aa-4452-432f-a468-0e2255a69e73
-
-
-
 https://github.com/user-attachments/assets/3a45d92b-5695-4941-95b4-088a2a313505
 
+https://github.com/user-attachments/assets/1ce1a0aa-4452-432f-a468-0e2255a69e73
 
 
 If you would like to try it out for yourself:
