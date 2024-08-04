@@ -6,8 +6,9 @@ body {
     display: flex;
     width: 100%;
     border-bottom: 1px solid #E0E0E0;
-    justify-content: flex-start;
-    padding: 16px 16px 16px 16px;
+    justify-content:space-between;
+    padding: 16px ;
+    align-content: center;
 }
 
 .column-container {
@@ -27,11 +28,44 @@ body {
     flex: 1; 
 }
 
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24px;
+    /* padding: 8px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 328px;
+    margin-right: 16px;
+    gap: 8px;
+}
+
+.search input {
+    width:75%;
+    font-size: 14px;
+    color: #9E9E9E;
+    border: none;
+    caret-color: #EA246E;
+    
+}
+
+.search input:focus {
+    color: black;
+    outline: none;
+  }
+
 .dropdown-container {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin-left: 16px;
+}
+
+.dropdown-container-label {
+    font-size: 14px;
+    color: #666666;
+    font-weight: 600;
 }
 
 .dropdown {

@@ -6,12 +6,13 @@ import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDown
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import DoneIcon from "@mui/icons-material/Done";
 import StarIcon from "@mui/icons-material/Star";
-import { getColumn1, getColumn2, sortRestaurants } from "../components/utils";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { getColumn1, getColumn2, searchRestaurants, sortRestaurants } from "../components/utils";
 
 const MyRestaurants = ({ restaurants }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [sortBy, setSortBy] = useState("Most recent");
-  const [currRestaurants, setCurrRestaurants] = useState([]);
+  const [searchBy, setSearchBy] = useState("");
   const [column1, setColumn1] = useState([]);
   const [column2, setColumn2] = useState([]);
 
@@ -35,30 +36,24 @@ const MyRestaurants = ({ restaurants }) => {
 
   //reload when prop updated
   useEffect(() => {
-    const sortedRestaurants = sortRestaurants(restaurants, sortBy);
-    setCurrRestaurants(sortedRestaurants);
+    const searchedRestaurants = searchRestaurants(restaurants, searchBy); 
+    const sortedRestaurants = sortRestaurants(searchedRestaurants, sortBy);
     setColumn1(getColumn1(sortedRestaurants));
     setColumn2(getColumn2(sortedRestaurants));
-  }, [restaurants]);
+  }, [restaurants, searchBy, sortBy]);
 
-  //select sort by 
+  //select sort by
   const handleOptionClick = (option) => {
     setSortBy(option);
     setIsOpen(false);
-    const sortedRestaurants = sortRestaurants(currRestaurants, option);
-    setCurrRestaurants(sortedRestaurants);
-    setColumn1(getColumn1(sortedRestaurants));
-    setColumn2(getColumn2(sortedRestaurants));
-  }
+  };
 
   return (
     <>
       <div className="main-container">
         {/* dropdown section */}
         <div className="dropdown-container">
-          <span style={{ fontSize: "14px", color: "#666666", fontWeight: 600 }}>
-            Sort by
-          </span>
+          <span className="dropdown-container-label">Sort by</span>
           <div className="dropdown">
             <div
               className={`dropdown-header ${isOpen ? "open" : ""}`}
@@ -97,7 +92,12 @@ const MyRestaurants = ({ restaurants }) => {
             )}
           </div>
         </div>
+        <div className="search">
+          <SearchOutlinedIcon />
+          <input type="text" placeholder="Name, Location, Description, Tag" value={searchBy} onChange={(e) => setSearchBy(e.target.value)}/>
+        </div>
       </div>
+      {column1.length === 0 && column2.length === 0 && <span className="no-restaurants-text">No matching restaurants found!</span>}
       {/* restaurant cards section, split into 2 columns */}
       <div className="column-container">
         <div className="column">

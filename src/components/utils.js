@@ -40,10 +40,27 @@ export const sortRestaurants = (restaurants, sortBy) => {
   }
 };
 
+export const searchRestaurants = (restaurants, searchBy) => {
+  if (!searchBy) return restaurants;
+
+  const lowerCaseSearchBy = searchBy.toLowerCase();
+
+  const filtered = restaurants.filter(
+    (restaurant) =>
+      restaurant.name.toLowerCase().includes(lowerCaseSearchBy) ||
+      restaurant.location.toLowerCase().includes(lowerCaseSearchBy) ||
+      restaurant.description.toLowerCase().includes(lowerCaseSearchBy) ||
+      restaurant.tags.some((tag) =>
+        tag.toLowerCase().includes(lowerCaseSearchBy)
+      )
+  );
+  return filtered;
+};
+
 export const getColumn1 = (restaurants) => {
-    return restaurants.slice(0, Math.ceil(restaurants.length / 2))
+  return restaurants.slice(0, Math.ceil(restaurants.length / 2));
 };
 
 export const getColumn2 = (restaurants) => {
-    return restaurants.slice(Math.ceil(restaurants.length / 2))
+  return restaurants.slice(Math.ceil(restaurants.length / 2));
 };
