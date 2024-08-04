@@ -14,12 +14,14 @@ https://github.com/user-attachments/assets/1ce1a0aa-4452-432f-a468-0e2255a69e73
 
 
 
+https://github.com/user-attachments/assets/3a45d92b-5695-4941-95b4-088a2a313505
+
+
+
 If you would like to try it out for yourself:
 1. Clone the deploy branch and npm i
 
-2. Head to frontend/src/pages/AddRestaurant.js
-3. Uncomment const { data } = await axios.get(`http://localhost:3001/scrape?username=${username}`); (line 45-47)
-4. npm start (localhost:3000)
+2. npm start (localhost:3000)
 
 5. Head to backend/index.js 
 6. Fill in your Instagram username and Password in line xxxx respectively
