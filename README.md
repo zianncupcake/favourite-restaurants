@@ -5,7 +5,7 @@ I was inspired by the 'Autofill with LinkedIn / Resume' function on job applicat
 Current functionality on hosted application:
 I used dummy data from '@flipcoffeeroasters'to simulate the retrieving data and autofilling of the form
 
-Demo on localhost:
+Full functionality demo on localhost:
 
 https://github.com/user-attachments/assets/3a45d92b-5695-4941-95b4-088a2a313505
 
