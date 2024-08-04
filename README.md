@@ -16,12 +16,11 @@ Application view:
 https://github.com/user-attachments/assets/1ce1a0aa-4452-432f-a468-0e2255a69e73
 
 
-If you would like to try it out for yourself:
+If you would like to try it out using your Instagram account credentials:
 1. Clone the deploy branch and npm i
-
 2. npm start (localhost:3000)
 
-5. Head to backend/index.js 
-6. Fill in your Instagram username and Password in line 27 and 31 respectively
-7. npm start (localhost:3001)
+3. Head to backend/index.js 
+4. Fill in your account Username and Password in line 27 and 31 respectively
+5. npm start (localhost:3001)
 
