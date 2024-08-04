@@ -49,7 +49,7 @@ const MyRestaurants = ({ restaurants }) => {
     setCurrRestaurants(sortedRestaurants);
     setColumn1(getColumn1(sortedRestaurants));
     setColumn2(getColumn2(sortedRestaurants));
-  };
+  }
 
   return (
     <>
