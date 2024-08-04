@@ -36,8 +36,7 @@ function App() {
       <div className="content">
         {restaurants.length === 0 && activeTab === "myRestaurants" && (
           <span className="no-restaurants-text">
-            Welcome! Get started by adding a restaurant in the 'Add Restaurant'
-            tab
+            Welcome! Get started by adding a restaurant in Add Restaurant 
           </span>
         )}
         {activeTab === "myRestaurants" && restaurants.length > 0 && (
