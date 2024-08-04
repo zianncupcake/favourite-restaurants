@@ -1,6 +1,6 @@
 # PLEASE NOTE
 ## Adding restaurants feature
-I was inspired by the 'Autofill with LinkedIn / Resume' function on job application sites which greatly reduced the time it took for me to fill in the respective form fields. Likewise, I recreated this functionality by creating an 'autofill with Instagram' function using the Pupeteer library in NodeJS. It automates interactions with Instagram to retrieve the profile information (Bio, description, location, website) when given an Instagram username. However, I encountered significant challenges while attempting to deploy my backend server (perhaps due to security measures from Instagram as it is possible to be used for malicious purposes).
+I was inspired by the 'Autofill with LinkedIn / Resume' function on job application sites which greatly reduced the time it took for me to fill in the respective form fields. Likewise, I recreated this functionality by creating an 'Autofill with Instagram' function using the Puppeteer library in NodeJS. It automates interactions with Instagram to retrieve the profile information (Bio, description, location, website) when given an Instagram username. However, I encountered significant challenges while attempting to deploy my backend server (perhaps due to security measures from Instagram as it is possible to be used for malicious purposes).
 
 ### Current functionality on hosted application
 I used dummy data from '@flipcoffeeroasters' to simulate the retrieving data and autofilling of the form
