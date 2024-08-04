@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Favourite Restaurants
+Created using ReactJS and Redux
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Adding restaurants feature:
+I was inspired by the 'autofill with LinkedIn / Resume' function on job application sites which greatly reduced the time it took for me to fill in the respective form fields. Likewise, I recreated this functionality by creating an 'autofill with Instagram' function using Pupeteer in NodeJS. It automates interactions with Instagram to retrieve the profile information (Bio, description, location) when given an Instagram username. However, I realised I encountered significant challenges while attempting to deploy my backend server (perhaps due to security measures from Instagram).
 
-## Available Scripts
+Current functionality on hosted application:
+I used dummy data from '@flipcoffeeroasters'to simulate the retrieving data and autofilling of the form
 
-In the project directory, you can run:
+Demo on localhost:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+https://github.com/user-attachments/assets/1ce1a0aa-4452-432f-a468-0e2255a69e73
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you would like to try it out for yourself:
+1. Clone the deploy branch and npm i
 
-### `npm run build`
+2. Head to frontend/src/pages/AddRestaurant.js
+3. Uncomment const { data } = await axios.get(`http://localhost:3001/scrape?username=${username}`); (line 45-47)
+4. npm start (localhost:3000)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Head to backend/index.js 
+6. Fill in your Instagram username and Password in line xxxx respectively
+7. npm start (localhost:3001)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
