@@ -211,6 +211,7 @@ const AddRestaurant = () => {
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               className="modal-input"
+              placeholder="Please refer to README file"
             />
             <span className="normal-text">Do not include '@'</span>
             <button
