@@ -4,16 +4,12 @@ import AddRestaurant from "./pages/AddRestaurant";
 import MyRestaurants from "./pages/MyRestaurants";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useSelector, useDispatch } from "react-redux";
-import { resetState } from "./redux/restaurantSlice";
+import { useSelector } from "react-redux";
 import { sortRestaurants } from "./components/utils";
 
 function App() {
   const [activeTab, setActiveTab] = useState("myRestaurants");
   const restaurants = useSelector((state) => state.restaurants.restaurants);
-
-  // const dispatch = useDispatch();
-  // dispatch(resetState())
 
   return (
     <div className="tabs-container">

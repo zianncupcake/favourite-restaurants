@@ -2,7 +2,8 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initalRestaurants = []
 
-// note: filled the initial state with some restaurants for reference
+// note: filled the initial state with some restaurants for your reference
+
 // const initalRestaurants = [
 //   {
 //     createdAt: 1722539825503,
