@@ -1,8 +1,8 @@
 # Favourite Restaurants
 Created using ReactJS and Redux
 
-# PLEASE NOTE:
-## Adding restaurants feature:
+# PLEASE NOTE
+## Adding restaurants feature
 I was inspired by the 'autofill with LinkedIn / Resume' function on job application sites which greatly reduced the time it took for me to fill in the respective form fields. Likewise, I recreated this functionality by creating an 'autofill with Instagram' function using Pupeteer in NodeJS. It automates interactions with Instagram to retrieve the profile information (Bio, description, location) when given an Instagram username. However, I realised I encountered significant challenges while attempting to deploy my backend server (perhaps due to security measures from Instagram).
 
 Current functionality on hosted application:
@@ -25,6 +25,6 @@ If you would like to try it out for yourself:
 2. npm start (localhost:3000)
 
 5. Head to backend/index.js 
-6. Fill in your Instagram username and Password in line xxxx respectively
+6. Fill in your Instagram username and Password in line 27 and 31 respectively
 7. npm start (localhost:3001)
 
